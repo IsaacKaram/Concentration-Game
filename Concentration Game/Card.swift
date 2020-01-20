@@ -13,7 +13,7 @@ struct Card : Hashable
     func hash(into hasher: inout Hasher){
         hasher.combine(identifier.hashValue)
     }
-     
+    
     static func ==(lhs: Card, rhs: Card) -> Bool {
         return lhs.identifier == rhs.identifier
     }
